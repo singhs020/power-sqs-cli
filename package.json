@@ -1,0 +1,31 @@
+{
+  "name": "power-sqs-cli",
+  "version": "0.0.1",
+  "description": "Perform sink operations from power-sqs via cli",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simranjeet2589/power-sqs-cli.git"
+  },
+  "keywords": [
+    "AWS",
+    "SQS",
+    "messages",
+    "power-sqs",
+    "sink"
+  ],
+  "author": "Simranjeet Singh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/simranjeet2589/power-sqs-cli/issues"
+  },
+  "homepage": "https://github.com/simranjeet2589/power-sqs-cli#readme",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "commander": "^2.20.0",
+    "power-sqs": "^0.1.0"
+  }
+}
