@@ -15,7 +15,7 @@
     "SQS",
     "messages",
     "power-sqs",
-    "sink"
+    "CLI"
   ],
   "author": "Simranjeet Singh",
   "license": "MIT",
