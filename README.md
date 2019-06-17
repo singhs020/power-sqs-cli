@@ -1,5 +1,3 @@
-### This package and the underlying package is under development and can change
-
 # power-sqs-cli
 Perform sink operations from power-sqs via cli
 
