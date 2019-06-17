@@ -1,6 +1,6 @@
 {
   "name": "power-sqs-cli",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Perform sink operations from power-sqs via cli",
   "main": "src/index.js",
   "scripts": {
