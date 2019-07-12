@@ -11,6 +11,7 @@ program
   .command("sinktosqs")
   .option("-s, --source <sourceSQS>", "The url for the source SQS")
   .option("-d, --dest <dq>", "The url for the destination SQS")
+  .option("--stopOnEmpty", "Stop the polling if the SQS returns nop messages")
   .action(cmd => {
     if(!cmd.source) {
       return console.log(chalk.red("The source SQS is required."));
@@ -21,8 +22,9 @@ program
     }
 
     const config = {
-      "source": {"url": cmd.source},
-      "destination": {"url": cmd.dest}
+      "source": {"url": cmd.source, "stopOnEmpty": cmd.stopOnEmpty},
+      "destination": {"url": cmd.dest},
+      
     };
 
     initSinkToSQS(config);
