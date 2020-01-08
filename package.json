@@ -12,7 +12,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/simranjeet2589/power-sqs-cli.git"
+    "url": "git+https://github.com/simranjeetsingh001/power-sqs-cli.git"
   },
   "preferGlobal": true,
   "bin": {
@@ -28,9 +28,9 @@
   "author": "Simranjeet Singh",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/simranjeet2589/power-sqs-cli/issues"
+    "url": "https://github.com/simranjeetsingh001/power-sqs-cli/issues"
   },
-  "homepage": "https://github.com/simranjeet2589/power-sqs-cli#readme",
+  "homepage": "https://github.com/simranjeetsingh001/power-sqs-cli#readme",
   "dependencies": {
     "chalk": "^2.4.2",
     "commander": "^3.0.2",
