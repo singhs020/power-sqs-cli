@@ -1,7 +1,7 @@
 # power-sqs-cli
-![Travis badge](https://travis-ci.org/singhs020/power-sqs.svg?branch=master) [![Greenkeeper badge](https://badges.greenkeeper.io/singhs020/power-sqs-cli.svg)](https://greenkeeper.io/)
+![Travis badge](https://travis-ci.org/singhs020/power-sqs-cli.svg?branch=master) [![Greenkeeper badge](https://badges.greenkeeper.io/singhs020/power-sqs-cli.svg)](https://greenkeeper.io/)
 
-[![NPM](https://nodei.co/npm/power-sqs.png?downloads=true)](https://www.npmjs.com/package/power-sqs-cli/)
+[![NPM](https://nodei.co/npm/power-sqs-cli.png?downloads=true)](https://www.npmjs.com/package/power-sqs-cli/)
 
 Perform sink operations from power-sqs via cli
 
