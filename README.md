@@ -1,4 +1,7 @@
 # power-sqs-cli
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/singhs020/power-sqs-cli.svg)](https://greenkeeper.io/)
+
 Perform sink operations from power-sqs via cli
 
 ## how to install
