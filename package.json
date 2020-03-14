@@ -33,7 +33,7 @@
   "homepage": "https://github.com/singhs020/power-sqs-cli#readme",
   "dependencies": {
     "chalk": "^3.0.0",
-    "commander": "^4.1.0",
+    "commander": "^5.0.0",
     "power-sqs": "^1.1.1"
   }
 }
