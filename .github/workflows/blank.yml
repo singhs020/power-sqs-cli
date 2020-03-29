@@ -34,7 +34,7 @@ jobs:
     - name: get github context
       env: 
         GITHUB_CONTEXT: ${{ toJson(github) }} 
-        run: echo "$GITHUB_CONTEXT" 
+      run: echo "$GITHUB_CONTEXT" 
 
     - name: get commit message
       run: |
