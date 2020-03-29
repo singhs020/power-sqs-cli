@@ -43,5 +43,5 @@ jobs:
       run : echo $commitmsg
 
     - name: step1
-      if: contains( env.commitmsg , 'try' )
+      if: contains( env.commitmsg , 'Merge' )
       run: echo hello
