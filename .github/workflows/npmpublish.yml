@@ -4,7 +4,7 @@ name: Node.js Package Publisher
 
 on:
   push:
-    branches: [master]
+    branches: [githubaction]
 
 jobs:
   build:
@@ -26,20 +26,31 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 12
-          registry-url: https://registry.npmjs.org/
-      - name: get commit message
+      - name: test some stuff
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
         run: |
          echo ::set-env name=commitmsg::$(git log --pretty=format:%s -1)
          echo ::set-env name=version::$(echo "no")
-      - name: show commit message
-        run : echo $commitmsg
-      - name: bump a patch version
-        if: contains(env.commitmsg, 'patch')
-        run: |
-          echo ::set-env name=version::$(npm version patch -m "[skip ci]")
-      - run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+         echo ::set-env name=githubctx::$(toJson())
+         echo $commitmsg
+         echo $version
+         echo $GITHUB_CONTEXT
+         echo 
+#       - uses: actions/setup-node@v1
+#         with:
+#           node-version: 12
+#           registry-url: https://registry.npmjs.org/
+#       - name: get commit message
+#         run: |
+#          echo ::set-env name=commitmsg::$(git log --pretty=format:%s -1)
+#          echo ::set-env name=version::$(echo "no")
+#       - name: show commit message
+#         run : echo $commitmsg
+#       - name: bump a patch version
+#         if: contains(env.commitmsg, 'patch')
+#         run: |
+#           echo ::set-env name=version::$(npm version patch -m "[skip ci]")
+#       - run: npm publish
+#         env:
+#           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
