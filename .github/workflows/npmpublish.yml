@@ -33,8 +33,8 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - name: setup git
         run: |
-          git config --global user.email "me@simranjeet.in"
-          git config -- global user.name "Github Actions"
+          git config user.email "me@simranjeet.in"
+          git config user.name "Github Actions"
       - name: bump a patch version
         if: contains(github.event.head_commit.message, 'patch')
         run: npm version patch -m "Upgrading to %s"
