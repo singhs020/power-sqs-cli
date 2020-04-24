@@ -1,5 +1,5 @@
 # power-sqs-cli
-![Travis badge](https://travis-ci.org/singhs020/power-sqs-cli.svg?branch=master) 
+![Travis badge](https://travis-ci.org/singhs020/power-sqs-cli.svg?branch=master) [![Known Vulnerabilities](https://snyk.io/test/github/singhs020/power-sqs-cli/badge.svg)](https://snyk.io/test/github/singhs020/power-sqs-cli)
 
 [![NPM](https://nodei.co/npm/power-sqs-cli.png?downloads=true)](https://www.npmjs.com/package/power-sqs-cli/)
 
