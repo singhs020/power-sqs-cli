@@ -12,19 +12,19 @@ program
   .option("-s, --source <sourceSQS>", "The url for the source SQS")
   .option("-d, --dest <dq>", "The url for the destination SQS")
   .option("--stopOnEmpty", "Stop the polling if the SQS returns nop messages")
-  .action(cmd => {
-    if(!cmd.source) {
+  .option("--oneByOne", "Process the messages one by one in reading")
+  .action(({source, dest, stopOnEmpty, oneByOne}) => {
+    if(!source) {
       return console.log(chalk.red("The source SQS is required."));
     }
 
-    if(!cmd.dest) {
+    if(!dest) {
       return console.log(chalk.red("The destination SQS is required."));
     }
 
     const config = {
-      "source": {"url": cmd.source, "stopOnEmpty": cmd.stopOnEmpty},
+      "source": {"url": cmd.source, "stopOnEmpty": stopOnEmpty, "isBulkOps": !oneByOne},
       "destination": {"url": cmd.dest},
-      
     };
 
     initSinkToSQS(config);
