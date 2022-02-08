@@ -23,8 +23,8 @@ program
     }
 
     const config = {
-      "source": {"url": cmd.source, "stopOnEmpty": stopOnEmpty, "isBulkOps": !oneByOne},
-      "destination": {"url": cmd.dest},
+      "source": {"url": source, "stopOnEmpty": stopOnEmpty, "isBulkOps": !oneByOne},
+      "destination": {"url": dest},
     };
 
     initSinkToSQS(config);
@@ -32,4 +32,4 @@ program
 
 
   program
-  .parse(process.argv);
+   .parse(process.argv);
