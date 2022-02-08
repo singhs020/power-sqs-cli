@@ -35,6 +35,6 @@
   "dependencies": {
     "chalk": "^4.1.0",
     "commander": "^6.1.0",
-    "power-sqs": "^1.4.17"
+    "power-sqs": "^1.8.0"
   }
 }
